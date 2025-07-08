@@ -1,20 +1,20 @@
 <div class="user-card">
   <div class="user-actions">
     <div class="edit" title="edit" (click)="onEdit()">
-      <img src="" alt="edit">
+      <img src="icons8-edit-pencil.svg" alt="edit">
     </div>
     <div class="delete" title="delete" (click)="onDelete()">
-      <img src="" alt="delete">
+      <img src="icons8-delete-button.svg" alt="delete">
     </div>
   </div>
-  <h2 class="user.name">{{user.name}}</h2>
+  <h2 class="user-name">{{user.name}}</h2>
   <div class="user-details">
     <p><strong>Username: </strong> {{user.username}}</p>
     <p><strong>Email: </strong>{{user.email}}</p>
     <p><strong>Phone: </strong>{{user.phone}}</p>
     <p>
       <strong>Website: </strong>
-      <a href="http://{{user.website}}" target="blank" class="user.link">
+      <a href="http://{{user.website}}" target="blank" class="user-link">
         {{user.website}}
       </a>
     </p>
@@ -22,7 +22,7 @@
 </div>
 
 <div class="modal" *ngIf="isEditModalOpen">
-  <div class="model-content">
+  <div class="modal-content">
     <div class="modal-header">
       <h2>Edit User</h2>
       <span class="close" (click)="closeModal()">&times;</span>

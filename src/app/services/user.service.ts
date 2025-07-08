@@ -4,7 +4,8 @@ import { HttpClient } from '@angular/common/http';
 import { map, Observable } from 'rxjs';
 
 
-const API_URL = 'https: //jsonplaceholder.typicode.com/users';
+const API_URL = 'https://jsonplaceholder.typicode.com/users';
+
 
 @Injectable({
   providedIn: 'root'
