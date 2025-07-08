@@ -1,3 +1,17 @@
+<app-header (addUserClick)="onOpenAddForm()"></app-header>
+
+<!-- ✅ New: Modal-style form -->
+<div class="add-user-modal" *ngIf="isFormOpen">
+  <div class="add-user-modal-content">
+    <app-userform
+      (formSubmit)="onAddUser($event)"
+      (formCancel)="onCloseAddForm()">
+    </app-userform>
+  </div>
+</div>
+
+
+
 <div id="users-container">
   <app-usercard *ngFor="let user of userService.getUsers()" [user]="user">
     

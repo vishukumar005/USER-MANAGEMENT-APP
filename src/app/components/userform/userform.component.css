@@ -1,0 +1,65 @@
+
+.user-form-container {
+  background: linear-gradient(to bottom right, #eaf4ff, #c7e0ff);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 480px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-form-container h2 {
+  font-size: 1.6rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-form-container input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 12px 14px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.user-form-container input:focus {
+  outline: none;
+  border-color: #2890ff;
+  box-shadow: 0 0 5px rgba(40, 144, 255, 0.4);
+}
+
+.user-form-container button {
+  width: 100%;
+  background-color: #2890ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-bottom: 15px;
+}
+
+.user-form-container button:hover {
+  background-color: #176fce;
+  transform: translateY(-2px);
+}
+
+.user-form-container button:active {
+  transform: translateY(1px);
+}
+
+/* Users Container */
+#users-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
